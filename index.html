@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./script/script.js"></script>
+    <title>Cauculadora de IMC v1.0</title>
+</head>
+<body>
+    <section>
+        <header>
+            <h1>Cauculadora de IMC</h1>
+            <p>O cauculo do IMC ("Índice de Massa Corporal") digite seu peso em Kg(Kilograma) e altura em M(metros).</p>
+        </header>
+
+        <form onsubmit="event.preventDefault(); cauculoImc();">
+            <label for="peso">Digite seu Peso (Kg): </label>
+            <input type="number" id= "peso" placeholder="Digite seu peso aqui..." required >
+
+            <label for="altura">Digite sua Altura (M):</label>
+            <input type="text" id="altura" placeholder="Digite sua altura aqui..." required >
+            
+            <p class="resultado"><span id="condição"></span></p>
+
+            <div class="botoes">
+                <button type="submit">Caucular</button>
+                <button type="button" onclick="btnLimpar()">Limpar</button>
+            </div>
+        </form> 
+        
+    </section>
+</body>
+</html>
